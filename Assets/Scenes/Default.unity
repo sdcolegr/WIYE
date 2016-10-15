@@ -171,7 +171,7 @@ GameObject:
   - 64: {fileID: 130298605}
   - 23: {fileID: 130298604}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: RadioPlate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1156,7 +1156,6 @@ GameObject:
   - 20: {fileID: 551583402}
   - 124: {fileID: 551583401}
   - 92: {fileID: 551583400}
-  - 81: {fileID: 551583399}
   m_Layer: 0
   m_Name: Computer Camera
   m_TagString: MainCamera
@@ -1164,13 +1163,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &551583399
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 551583398}
-  m_Enabled: 1
 --- !u!92 &551583400
 Behaviour:
   m_ObjectHideFlags: 0
@@ -1865,7 +1857,7 @@ GameObject:
   - 65: {fileID: 766672966}
   - 23: {fileID: 766672965}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Desk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1944,7 +1936,7 @@ GameObject:
   - 64: {fileID: 850359353}
   - 23: {fileID: 850359352}
   m_Layer: 0
-  m_Name: Plane (3)
+  m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2169,7 +2161,7 @@ GameObject:
   - 64: {fileID: 914664479}
   - 23: {fileID: 914664478}
   m_Layer: 0
-  m_Name: Quad (1)
+  m_Name: Calendar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2838,6 +2830,76 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1433557493}
   m_Mesh: {fileID: 4300018, guid: e41f1a8d2de3c84479d0e70e6e58f65c, type: 3}
+--- !u!1 &1451060635
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1451060637}
+  - 114: {fileID: 1451060638}
+  - 114: {fileID: 1451060636}
+  m_Layer: 0
+  m_Name: CallCreator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1451060636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1451060635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 467dea38875ac8b428751cc49fd4147c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1451060637
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1451060635}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -26.427101, y: -1.712241, z: -15.44307}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+--- !u!114 &1451060638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1451060635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c93c4fefcd25054fa0cf840c4f61e9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cityName: EmergencyVille
+  Locations:
+  - name: Industrial Zone
+    crimeStats: 0.2
+    fireStats: 0.3
+    medicalStats: 0.5
+  - name: Residential Zone
+    crimeStats: 0.2
+    fireStats: 0.3
+    medicalStats: 0.5
+  - name: Commercial Zone
+    crimeStats: 0.2
+    fireStats: 0.3
+    medicalStats: 0.5
+  - name: Port Zone
+    crimeStats: 0.2
+    fireStats: 0.3
+    medicalStats: 0.5
 --- !u!1 &1757396381
 GameObject:
   m_ObjectHideFlags: 0
@@ -3258,7 +3320,7 @@ GameObject:
   - 64: {fileID: 1930582252}
   - 23: {fileID: 1930582251}
   m_Layer: 0
-  m_Name: Quad
+  m_Name: Computer Screen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
