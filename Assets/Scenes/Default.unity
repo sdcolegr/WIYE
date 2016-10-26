@@ -1694,10 +1694,10 @@ Camera:
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.3026
-    y: 0.14
-    width: 0.357
-    height: 0.75
+    x: 0.261
+    y: 0.136
+    width: 0.431
+    height: 0.724
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 23.00899
@@ -3067,7 +3067,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400056, guid: e41f1a8d2de3c84479d0e70e6e58f65c, type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1145178061}
-  m_LocalRotation: {x: 0.5923741, y: 0.710027, z: 0.3480614, w: -0.15429786}
+  m_LocalRotation: {x: 0.59237415, y: 0.71002704, z: 0.34806144, w: -0.15429787}
   m_LocalPosition: {x: -4.5991964, y: 4.0470066, z: 1.329998}
   m_LocalScale: {x: 0.71182996, y: 0.71182996, z: 0.7118304}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
