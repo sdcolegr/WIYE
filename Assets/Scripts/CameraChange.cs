@@ -23,7 +23,7 @@ public class CameraChange : MonoBehaviour {
 					cam1.enabled = false;
 					cam2.enabled = true;
 				}
-			}else if (hit.collider.gameObject != listener) {
+			}else if (hit.collider.gameObject != listener && cam2.enabled == true) {
 				if (Input.GetMouseButtonDown (0)) {
 					cam1.enabled = true;
 					cam2.enabled = false;
