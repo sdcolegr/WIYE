@@ -9,6 +9,7 @@ public class CameraChange : MonoBehaviour {
 	public Camera cam2;
 	public GameObject listener;
 	public GameObject mainCamera;
+	public GameObject computerScreen;
 
 
 	void Start () {
@@ -20,11 +21,13 @@ public class CameraChange : MonoBehaviour {
 		if(Physics.Raycast(ray, out hit)) {
 			if (hit.collider.gameObject == listener) {
 				if (Input.GetMouseButtonDown (0)) {
+					computerScreen.SetActive(true);
 					cam1.enabled = false;
 					cam2.enabled = true;
 				}
 			}else if (hit.collider.gameObject != listener && cam2.enabled == true) {
 				if (Input.GetMouseButtonDown (0)) {
+					computerScreen.SetActive(false);
 					cam1.enabled = true;
 					cam2.enabled = false;
 					Screen.lockCursor = true;
