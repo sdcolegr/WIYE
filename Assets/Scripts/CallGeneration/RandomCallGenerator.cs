@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using System.Collections.Generic;
 public class RandomCallGenerator : MonoBehaviour {
 
 	public Call GenerateCall() {
@@ -13,7 +13,7 @@ public class RandomCallGenerator : MonoBehaviour {
 		// set up those values
 
 		Call newCall = new Call();
-		newCall.Setup(callerName,callLegitimacy,callLocation,callType, scale);
+		newCall.Setup(callerName,callLegitimacy,callLocation,callType, scale, new List<Dialog>());
 		newCall.DebugPrint();
 		return newCall;
 	}
