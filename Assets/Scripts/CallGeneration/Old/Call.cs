@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
+[System.Serializable]
 public class Call  {
 	//These three are just simple versions, these should be updated to contain more depth
 	public enum CallType {Fire=0,Crime,Medical};
