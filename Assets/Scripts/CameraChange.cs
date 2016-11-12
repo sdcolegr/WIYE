@@ -11,26 +11,29 @@ public class CameraChange : MonoBehaviour {
 	public GameObject mainCamera;
 	public GameObject computerScreen;
 	public GameObject UICamera;
+	public GameObject textBox;
 
 
 	void Start () {
 		cam1.enabled = true;
 		cam2.enabled = false;
+		//Screen.lockCursor = true;
 	}
 	void Update(){
-		ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-		if(Physics.Raycast(ray, out hit)) {
+		ray = Camera.main.ScreenPointToRay (Input.mousePosition);
+		if (Physics.Raycast (ray, out hit)) {
 			if (hit.collider.gameObject == listener) {
 				if (Input.GetMouseButtonDown (0)) {
-					computerScreen.SetActive(true);
-					UICamera.SetActive(true);
+					computerScreen.SetActive (true);
+					UICamera.SetActive (true);
+					Screen.lockCursor = false;
 					cam1.enabled = false;
 					cam2.enabled = true;
 				}
-			}else if (hit.collider.gameObject != listener && cam2.enabled == true) {
+			} else if (hit.collider.gameObject != listener && cam2.enabled == true) {
 				if (Input.GetMouseButtonDown (0)) {
-					computerScreen.SetActive(false);
-					UICamera.SetActive(false);
+					computerScreen.SetActive (false);
+					UICamera.SetActive (false);
 					cam1.enabled = true;
 					cam2.enabled = false;
 					Screen.lockCursor = true;
