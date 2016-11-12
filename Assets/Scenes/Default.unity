@@ -3180,6 +3180,8 @@ GameObject:
   - 4: {fileID: 1451060637}
   - 114: {fileID: 1451060638}
   - 114: {fileID: 1451060636}
+  - 114: {fileID: 1451060640}
+  - 114: {fileID: 1451060639}
   m_Layer: 0
   m_Name: CallCreator
   m_TagString: Untagged
@@ -3240,6 +3242,32 @@ MonoBehaviour:
     crimeStats: 0.2
     fireStats: 0.3
     medicalStats: 0.5
+--- !u!114 &1451060639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1451060635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3559dda375f9bc4380f371b099bfc43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  progress: 0
+--- !u!114 &1451060640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1451060635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d1e347a78cec5d4488f0d8068057312, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  current: 0
+  storyPos: 0
+  sequence: 03000000
 --- !u!1 &1473061068
 GameObject:
   m_ObjectHideFlags: 0
