@@ -19,6 +19,7 @@ public class TextBoxManager : MonoBehaviour {
 	public Text theButtonText;
 
 	public TextAsset[] textFiles;
+	public bool[] flagged;
 	public string[] textLines;
 
 	public int currentLine;
@@ -29,8 +30,10 @@ public class TextBoxManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
 		i = 0;
+		for(int j = 0; j < textFiles.Length; j++) {
+			flagged [j] = false;
+		}
 
 		script = camera.GetComponent<UnityStandardAssets.Utility.SimpleMouseRotator> ();
 		script.enabled = false;
@@ -67,9 +70,7 @@ public class TextBoxManager : MonoBehaviour {
 
 					textBox.SetActive (true);
 					button.SetActive (true);
-					Screen.lockCursor = true;
-					script.enabled = false;
-					Screen.lockCursor = false;
+					lockCamera ();
 				}
 			}
 		}
@@ -80,15 +81,35 @@ public class TextBoxManager : MonoBehaviour {
 		if (currentLine > endAtLine) {
 			textBox.SetActive (false);
 			button.SetActive (false);
-			Screen.lockCursor = true;
-			script.enabled = true;
-			Screen.lockCursor = false;
-			i++;
+			resetCamera ();
 			currentLine = 0;
 			endAtLine = 0;
+			getUnflagged ();
 		}
 		theTextBox.text = textLines [currentLine];
 		theButtonText.text = textLines [currentLine + 1];
+	}
+
+	private void getUnflagged(){
+		int j = Random.Range (1, textFiles.Length);
+		if (flagged [j] == true) {
+			getUnflagged ();
+		} else {
+			flagged [j] = true;
+			i = j;
+		}
+	}
+
+	private void lockCamera(){
+		Screen.lockCursor = true;
+		script.enabled = false;
+		Screen.lockCursor = false;
+	}
+
+	private void resetCamera(){
+		Screen.lockCursor = true;
+		script.enabled = true;
+		Screen.lockCursor = false;
 	}
 		
 }

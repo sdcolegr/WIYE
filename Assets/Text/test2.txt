@@ -1,4 +1,4 @@
-line 1
-line 2
-line 3
-line 4
+Help! There's a fire at <INSERT LOCATION>!
+How big is the fire?
+About the size of a three story building.
+Help will be there shortly.
