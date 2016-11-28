@@ -1,10 +1,18 @@
 fileFormatVersion: 2
-guid: 3880726591b5c7144936cc57cdedbc4a
-timeCreated: 1478910222
+guid: 15357a5222fe85d479fb2354547ae6a7
+timeCreated: 1478904810
 licenseType: Pro
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - desktop: {instanceID: 0}
+  - map: {instanceID: 0}
+  - info: {instanceID: 0}
+  - terminal: {instanceID: 0}
+  - mapSelect: {instanceID: 0}
+  - infoSelect: {instanceID: 0}
+  - terminalSelect: {instanceID: 0}
+  - exit: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
