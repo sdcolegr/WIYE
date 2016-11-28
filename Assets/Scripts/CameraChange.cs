@@ -25,7 +25,7 @@ public class CameraChange : MonoBehaviour {
 			if (hit.collider.gameObject == listener) {
 				if (Input.GetMouseButtonDown (0)) {
 					computerScreen.SetActive (true);
-					UICamera.SetActive (true);
+					//UICamera.SetActive (true);
 					Screen.lockCursor = false;
 					cam1.enabled = false;
 					cam2.enabled = true;
@@ -33,7 +33,7 @@ public class CameraChange : MonoBehaviour {
 			} else if (hit.collider.gameObject != listener && cam2.enabled == true) {
 				if (Input.GetMouseButtonDown (0)) {
 					computerScreen.SetActive (false);
-					UICamera.SetActive (false);
+					//UICamera.SetActive (false);
 					cam1.enabled = true;
 					cam2.enabled = false;
 					Screen.lockCursor = true;
