@@ -3019,7 +3019,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400056, guid: e41f1a8d2de3c84479d0e70e6e58f65c, type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1145178061}
-  m_LocalRotation: {x: 0.59237415, y: 0.71002704, z: 0.34806144, w: -0.15429787}
+  m_LocalRotation: {x: 0.5923741, y: 0.710027, z: 0.3480614, w: -0.15429786}
   m_LocalPosition: {x: -4.5991964, y: 4.0470066, z: 1.329998}
   m_LocalScale: {x: 0.71182996, y: 0.71182996, z: 0.7118304}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3881,12 +3881,12 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -4114,12 +4114,12 @@ MonoBehaviour:
   theTextBox: {fileID: 1230532051}
   theButtonText: {fileID: 218030629}
   textFiles:
-  - {fileID: 4900000, guid: d3167503ea02d384fad98a9d8265467f, type: 3}
-  - {fileID: 4900000, guid: 9b9fb3161b6b95b49900f9a59b481da8, type: 3}
-  - {fileID: 4900000, guid: 684e70c8ebe03b74f8ce257156934639, type: 3}
-  - {fileID: 4900000, guid: 5a06fd01b099cc0459174620b72a1850, type: 3}
-  - {fileID: 4900000, guid: ecbfdf66d86d7de428328e950b27e7c8, type: 3}
-  - {fileID: 4900000, guid: 6c6ae3ac3056caa43b54c1b099680b8d, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   flagged: 000000000000
   textLines: []
   currentLine: 0
