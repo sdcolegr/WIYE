@@ -5284,7 +5284,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camera: {fileID: 229241469}
-  listener: {fileID: 0}
+  listener: {fileID: 1977446288}
   textBox: {fileID: 1383287779}
   button: {fileID: 1745510778}
   theTextBox: {fileID: 1230532051}
@@ -5436,6 +5436,22 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1940579360}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1977446288 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100036, guid: 8955b519141788d479d6b580c0f4a9bb, type: 3}
+  m_PrefabInternal: {fileID: 303689287}
+--- !u!65 &1977446291
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1977446288}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.57, y: 2.43, z: 2.58}
+  m_Center: {x: 3.85, y: 0.52, z: 7.51}
 --- !u!1 &1989090093
 GameObject:
   m_ObjectHideFlags: 0
