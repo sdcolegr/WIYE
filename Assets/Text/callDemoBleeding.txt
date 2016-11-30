@@ -1,0 +1,20 @@
+﻿Operator: Hello this is 9-11 what is your emergency?
+Next
+Caller:  There is a psycho with a knife!
+Next
+Recruiter: Try to figure out the situation to help calm them and find out where they are to send help.
+Next
+Operator: Is anyone hurt? If so how many?
+Next
+Caller: There 3 people badly cut!
+Next
+Operator: Tell me where you are so I can send help.
+Next
+Caller: I’m at the library at Michigan Tech, please hurry!
+Next
+Recruiter: Make sure that the caller stays on the line.
+Next
+Operator: Please stay with me, do not hang up, help is on the way.
+Next
+Recruiter: Use the map on the computer to send help to the library.
+Next
