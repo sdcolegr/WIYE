@@ -6,7 +6,7 @@ Recruiter: Try to figure out the situation to help calm them and find out where 
 Next
 Operator: Is anyone hurt? If so how many?
 Next
-Caller: There 3 people badly cut!
+Caller: There someone who is badly cut!
 Next
 Operator: Tell me where you are so I can send help.
 Next
