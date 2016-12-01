@@ -101,15 +101,15 @@ public class TextBoxManager : MonoBehaviour {
 	}
 
 	private void lockCamera(){
-		Screen.lockCursor = true;
+		Cursor.lockState = CursorLockMode.Locked;
 		script.enabled = false;
-		Screen.lockCursor = false;
+		Cursor.lockState = CursorLockMode.None;
 	}
 
 	private void resetCamera(){
-		Screen.lockCursor = true;
+		Cursor.lockState = CursorLockMode.Locked;
 		script.enabled = true;
-		Screen.lockCursor = false;
+		Cursor.lockState = CursorLockMode.None;
 	}
 		
 }
